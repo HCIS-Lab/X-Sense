@@ -300,10 +300,10 @@ display: inline-block;
 /* --- flexslider --- */
 
 #featured .flexslider {
-	padding:0;  
-	background: #b5859f; 
-	position: relative; 
-	/* zoom: 52; */
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-height: 800px;
+  overflow: hidden;
 }
 #featured .flexslider:after {
 content:'';
@@ -317,8 +317,6 @@ height:100%;
 #featured .flexslider img {
 	width: 100%;
 	height: 100%;
-	max-width: 1920px;     /* 👈 limit max width */
-	max-height: 1080px;    /* 👈 limit max height */
 	object-fit: cover;
   }
 .flex-direction-nav .flex-prev{
@@ -327,10 +325,24 @@ left:0px;
 .flex-direction-nav .flex-next{ 
 right:0px;
 }
-.flex-caption {zoom: 1;
-bottom: 75px; background-color: transparent; color: #fff; margin: 0; padding: 25px 25px 25px 30px; position: absolute; left: 10%; right:0px; }
-.flex-caption h3 {color: #FFFFFF; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;font-size: 45px;}
-.flex-caption p {margin: 0 0 15px; font-size: 45px;}
+.flex-caption 
+{zoom: 1;
+	bottom: 75px; 
+	background-color: transparent; 
+	color: #fff; margin: 0; 
+	padding: 25px 25px 25px 30px; 
+	position: absolute; 
+	left: 10%; right:0px; 
+}
+
+.flex-caption h3 {
+	color: #FFFFFF; letter-spacing: 1px; 
+	margin-bottom: 8px; text-transform: uppercase;
+	font-size: 35px;
+}
+#featured .flexslider .flex-caption p {
+	font-size: 18px !important;
+}
 .skill-home{
 margin-bottom:50px;
 }
@@ -568,11 +580,11 @@ ul.breadcrumb li a:hover {
   }
   
   .content_white h2 {
-	font-size: 3em;
+	font-size: 2.8em;
 	margin-bottom: 20px;
   }
   .content_white p.overview-paragraph {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	line-height: 1.8;
 	color: #555;
   }
