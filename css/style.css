@@ -547,13 +547,22 @@ ul.breadcrumb li a:hover {
 /* Feature
 ============================ */
 .content_white {
-text-align: center;
-padding: 3em 0;
-}
-.content_white {
-text-align: center;
-padding: 3em 0;
-}
+	text-align: center;
+	padding: 3em 1em;
+	max-width: 1100px;
+	margin: 0 auto;
+  }
+  
+  .content_white h2 {
+	font-size: 3em;
+	margin-bottom: 20px;
+  }
+  
+  .content_white p.overview-paragraph {
+	font-size: 1.1em;
+	line-height: 1.8;
+	color: #555;
+  }
 .featured_content {
 background: #f6f6f6;
 width:100%;
