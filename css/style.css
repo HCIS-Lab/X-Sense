@@ -25,7 +25,7 @@ a:active {
 	clear:both;
 }
 
-h1,h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-weight:700;
 	line-height:1.1em;
@@ -76,7 +76,10 @@ img.img-polaroid {
 ==================================== */
  
 header .navbar {
-    margin-bottom: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; /* ensure it stays above other content */
 }
 
 .navbar-default {
@@ -1425,7 +1428,10 @@ ul.social-network li {
 /* scroll to top */
 html {
 	scroll-behavior: smooth;
-  }
+}
+#overview, #Keynote_Speakers, #Schedules {
+	scroll-margin-top: 50px;
+}
 .scrollup{
     position:fixed;
 	width:32px;
